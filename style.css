@@ -1,0 +1,97 @@
+:root {
+    --background: #384353;
+    --font: black;
+    --border: black;
+    --display: #eaeef5;
+    --container: #9499B3;
+    --btn: #eaeef5;
+}
+body {
+    background-color: var(--background);
+    color: var(--font);
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+}
+
+button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #ffffff;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    min-height: 500px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.container {
+    width: 350px;
+    border: 2px var(--border) solid;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: var(--container);
+    margin-top: 50px;
+
+}
+
+.display {
+    padding: 10px 20px;
+    border: 2px var(--border) solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: var(--display);
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.oneDisplay {
+    min-height: 32px;
+    font-size: 25px;
+}
+
+#secDisplay {
+    font-size: 12px;
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+.ops {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    margin-bottom: 10px;
+}
+.btn {
+    padding: 20px;
+    border: 2px var(--border) solid;
+    border-radius: 8px;
+    background-color: var(--btn);
+    font-size: 20px;
+}
+
+.op {
+    background-color: #d49366;
+}
+.op:hover {
+    background-color: #fac098;
+}
+.zero {
+    grid-column: span 3;
+}
